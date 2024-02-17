@@ -1,0 +1,81 @@
+/* Global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Styles for the App component */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Styles for the content area */
+.content {
+  flex: 1; /* This makes the content area grow and take up available space, pushing the footer down */
+}
+
+/* Styles for the App logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Animation styles for the App logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Styles for the App header */
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Styles for the App link */
+.App-link {
+  color: #61dafb;
+}
+
+/* Keyframes for the App logo spin animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Footer styles */
+/* Ensure your footer styles are correctly targeting the footer element */
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer p {
+  color: #888;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

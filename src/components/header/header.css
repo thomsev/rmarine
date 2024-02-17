@@ -1,0 +1,111 @@
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  background-color: #2681c2;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100%; /* Adjust size as needed */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Adjust gap as needed */
+}
+
+.nav-links li {
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333; /* Adjust color as needed */
+}
+
+.nav-links li a.active {
+  color: #0275d8; /* Adjust active link color as needed */
+}
+.hamburger {
+  display: none;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px; /* Width of the hamburger menu */
+  height: 25px; /* Height of the hamburger menu */
+  cursor: pointer;
+}
+
+.hamburger .line {
+  background-color: #333; /* Color of the hamburger lines */
+  height: 3px; /* Height of the lines */
+  margin: 5px 0; /* Space between the lines */
+  transition: all 0.3s ease;
+}
+
+.hamburger.open .line:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+
+/* Responsive styles for hamburger menu on smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide the nav links by default on small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    transition: transform 0.3s ease;
+    transform: translateY(-100%); /* Hide off-screen initially */
+  }
+
+  .nav-links.open {
+    display: flex; /* Show nav links when 'open' class is added */
+    transform: translateY(0);
+  }
+
+  /* Show the hamburger menu on small screens */
+  .hamburger {
+    display: block;
+  }
+
+  /* Apply styles for nav links when the menu is open */
+  .nav-links li {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* Hide the hamburger menu on larger screens */
+  .hamburger.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
