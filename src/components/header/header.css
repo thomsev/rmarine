@@ -4,7 +4,7 @@ header nav {
   justify-content: space-between;
   padding: 0 30px;
   /* Define a linear gradient for the background from top to bottom */
-  background: linear-gradient(to bottom, #5bb7ec 0%, #2681c2 100%);
+  background: linear-gradient(to bottom, #5bb7ec 0%, #164e77 100%);
 }
 
 .logo {

@@ -1,0 +1,75 @@
+/* BestillTime.css */
+
+.bestill-time-container {
+  max-width: 500px; /* Adjust width as needed */
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px; /* Smooth edges */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  background-color: #ffffff;
+  border: 1px solid #eaeaea; /* Light border for definition */
+}
+
+.bestill-time-heading {
+  color: #164e77;
+  font-size: 28px; /* Slightly larger font size for the heading */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bestill-time-form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+}
+
+.bestill-time-label {
+  font-size: 18px; /* Larger font size for better readability */
+  color: #555555;
+  margin-bottom: 8px;
+}
+
+.bestill-time-input,
+.bestill-time-textarea,
+.bestill-time-datepicker {
+  padding: 15px; /* More padding for input fields */
+  border: 2px solid #eaeaea; /* Solid border for inputs */
+  border-radius: 8px; /* Smooth edges for inputs */
+  font-size: 16px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px; /* Space after each input */
+  transition: border-color 0.3s;
+}
+
+.bestill-time-input:focus,
+.bestill-time-textarea:focus,
+.bestill-time-datepicker:focus {
+  border-color: #007bff; /* Highlight color when focused */
+  background-color: #ffffff; /* White background when focused */
+  outline: none;
+}
+
+.bestill-time-submit-button {
+  padding: 15px 30px; /* More padding for a larger button */
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px; /* Smooth edges for the button */
+  font-size: 18px;
+  font-weight: bold; /* Make the text a bit bolder */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px; /* Space before the submit button */
+}
+
+.bestill-time-submit-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+@media (max-width: 768px) {
+  .bestill-time-container {
+    margin: 10px;
+    padding: 15px;
+  }
+}

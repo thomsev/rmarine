@@ -1,8 +1,9 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './components/homepage/homepage';  
-import Footer from './components/footer/footer';    
-import Header from './components/header/header';  
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./components/homepage/homepage";
+import Footer from "./components/footer/footer";
+import Header from "./components/header/header";
+import BestillTime from "./components/bestilltime/bestilltime";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/bestilltime" element={<BestillTime />} />
             {/* Add more Route components as needed */}
           </Routes>
         </div>

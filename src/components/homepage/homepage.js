@@ -6,6 +6,8 @@ import "./homepage.css";
 import image1 from "../../assets/slide1.jpg";
 import image2 from "../../assets/slide2.jpg";
 import image3 from "../../assets/slide3.jpeg";
+import image4 from "../../assets/slide4.jpg";
+import image6 from "../../assets/slide6.jpg";
 import bg1 from "../../assets/bg1.jpg";
 import bg2 from "../../assets/bg2.jpg";
 import bg3 from "../../assets/bg3.jpg";
@@ -15,7 +17,6 @@ import label1 from "../../assets/label1.jpg";
 import label2 from "../../assets/label2.jpg";
 import label3 from "../../assets/label3.png";
 import label4 from "../../assets/label4.png";
-
 
 const images = [bg1, bg2, bg3, bg4, bg5];
 
@@ -58,40 +59,37 @@ const Homepage = () => {
 
         <div data-aos="fade-right">
           <img src={image3} alt="Image 1" />
-          <h2>Båter og motorer</h2>
-          <p>Nye båter og båtmotorer</p>
+          <h2>Verksted & Tjenester</h2>
+          <p>Vi utfører både store og små verksted tjenester</p>
         </div>
 
         <div data-aos="fade-right">
-          <img src={image2} alt="Image 1" />
-          <h2>Båter og motorer</h2>
-          <p>Nye båter og båtmotorer</p>
+          <img src={image6} alt="Image 1" />
+          <h2>Nettbutikk Båtlyd</h2>
+          <p>Vi monterer i alle typer båter</p>
         </div>
 
         <div data-aos="fade-right">
-          <img src={image2} alt="Image 1" />
-          <h2>Båter og motorer</h2>
-          <p>Nye båter og båtmotorer</p>
+          <img src={image4} alt="Image 1" />
+          <h2>Bestill time</h2>
         </div>
 
-  <div className="logos-container" data-aos="fade-up">
-  <div className="logo">
-    <img src={label1} alt="Logo 1" />
-  </div>
-  <div className="logo">
-    <img src={label2} alt="Logo 2" />
-  </div>
-  <div className="logo">
-    <img src={label3} alt="Logo 3" />
-  </div>
-  <div className="logo">
-    <img src={label4} alt="Logo 4" />
-  </div>
-</div>
-
+        <div className="logos-container" data-aos="fade-up">
+          <div className="logo">
+            <img src={label1} alt="Logo 1" />
+          </div>
+          <div className="logo">
+            <img src={label2} alt="Logo 2" />
+          </div>
+          <div className="logo">
+            <img src={label3} alt="Logo 3" />
+          </div>
+          <div className="logo">
+            <img src={label4} alt="Logo 4" />
+          </div>
+        </div>
       </section>
     </div>
-      
   );
 };
 
