@@ -1,5 +1,5 @@
 footer {
-  background-color: #8ECAE6; /* Change as needed */
+  background-color: #5bb7ec; /* Change as needed */
   padding: 20px 0;
   color: #333;
 }
@@ -35,7 +35,7 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .footer-column {
     padding: 10px 0;
   }

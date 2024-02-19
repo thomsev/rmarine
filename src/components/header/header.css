@@ -2,8 +2,9 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  background-color: #2681c2;
+  padding: 0 30px;
+  /* Define a linear gradient for the background from top to bottom */
+  background: linear-gradient(to bottom, #5bb7ec 0%, #2681c2 100%);
 }
 
 .logo {
@@ -13,7 +14,11 @@ header nav {
 
 .logo img {
   height: 100%; /* Adjust size as needed */
+  margin-top: 54px;
 }
+
+/* Example of importing a Google Font, replace with your desired font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
 .nav-links {
   list-style: none;
@@ -27,12 +32,26 @@ header nav {
 
 .nav-links li a {
   text-decoration: none;
-  color: #333; /* Adjust color as needed */
+  color: #ffffff; /* This sets the normal link color to white */
+  font-size: 1.2em; /* Increase the font size */
+  font-family: "Open Sans", sans-serif; /* Apply the imported font-family */
+  transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
+/* Active link styles */
 .nav-links li a.active {
-  color: #0275d8; /* Adjust active link color as needed */
+  color: #ffffff; /* Keeps the active link color white */
+  text-decoration: underline; /* Underlines the active link */
+  font-size: 1.3em; /* Makes the active link slightly larger */
+  font-weight: 600; /* Open Sans semi-bold for active link */
 }
+
+/* Hover styles, for user feedback on hover */
+.nav-links li a:hover {
+  color: #cce6ff; /* Lighter shade for hover effect */
+  text-decoration: underline; /* Underlines links on hover */
+}
+
 .hamburger {
   display: none;
 }
@@ -63,7 +82,6 @@ header nav {
 .hamburger.open .line:nth-child(3) {
   transform: translateY(-11px) rotate(-45deg);
 }
-
 
 /* Responsive styles for hamburger menu on smaller screens */
 @media (max-width: 768px) {
