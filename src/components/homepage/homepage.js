@@ -32,7 +32,7 @@ const Homepage = () => {
         console.log("Current image index is now:", newIndex); // For debugging
         return newIndex;
       });
-    }, 3000);
+    }, 6000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -76,13 +76,13 @@ const Homepage = () => {
 
         <div className="logos-container" data-aos="fade-up">
           <div className="logo">
-            <img src={label1} alt="Logo 1" />
+            <img src={label3} alt="Logo 1" />
           </div>
           <div className="logo">
             <img src={label2} alt="Logo 2" />
           </div>
           <div className="logo">
-            <img src={label3} alt="Logo 3" />
+            <img src={label1} alt="Logo 3" />
           </div>
           <div className="logo">
             <img src={label4} alt="Logo 4" />

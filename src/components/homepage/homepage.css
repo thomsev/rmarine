@@ -11,8 +11,9 @@ h1 {
 .welcome-image {
   position: relative;
   width: 100%;
-  height: 350px; /* or a specific height */
+  height: 310px; /* or a specific height */
   overflow: hidden;
+  background-color: #ffffff; /* This can be any color or even a gradient if you prefer */
 }
 
 .welcome-image img {
@@ -21,15 +22,16 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 3s ease-in-out;
-  z-index: -1; /* start with a low z-index */
+  transition: opacity 4s ease-in-out;
+  /* z-index: -1; We will not use a negative z-index for images */
   opacity: 0; /* start fully transparent */
 }
 
 .welcome-image img.active {
   opacity: 1;
-  z-index: 1; /* bring the active image on top */
+  z-index: 2; /* bring the active image on top, above the background image */
 }
+
 .logos-container {
   display: flex;
   justify-content: space-around;

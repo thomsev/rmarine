@@ -1,10 +1,30 @@
-/* Global styles */
-body, html {
+nhtml,
+body {
+  height: 100%; /* Make sure the html and body are full height */
   margin: 0;
   padding: 0;
-  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
+body {
+  background-image: url("../src/assets/bakgrunn.webp");
+  background-attachment: fixed; /* The background image will not scroll with the page */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Cover the entire area */
+}
+
+/* Your rotating images container */
+.slideshow-container {
+  position: relative; /* The position should be relative or absolute depending on your layout */
+  z-index: 2; /* Ensure it is above the background */
+}
+
+/* Any other content */
+.content {
+  position: relative; /* Ensure it's above the background image */
+  z-index: 2; /* Higher than the background but on the same plane as the slideshow */
+}
 /* Styles for the App component */
 .App {
   display: flex;
